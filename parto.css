@@ -1,0 +1,630 @@
+@keyframes nuvensdir {
+
+0%{
+  right: -200px;
+  }
+100%{
+  right: 1200px;
+  }
+}
+
+@keyframes tremer {
+  0%{
+      right: 0px;
+  }
+  10%{
+      right: 10px;
+  }
+  20%{
+      right: 0px;
+  }
+}
+
+@keyframes nuvensesq {
+
+  0%{
+    left: -200px;
+    }
+  100%{
+    left: 1200px;
+    }
+  }
+
+@keyframes subir {
+  0%{
+    bottom: -500px;
+    }
+  100%{
+    bottom: -5px;
+  }
+}
+
+@keyframes teste {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes esquerda {
+    0%{
+      left: 170px;
+    }
+  100%{
+    left: 100px;
+  }
+}
+
+@keyframes direita {
+  0%{
+    right: 135px;
+  }
+  100%{
+    right: 100px;
+  }
+}
+
+@keyframes ceu {
+  0% {
+    background-color: lightblue;
+  }
+  100%{
+    background-color: hsl(239, 29%, 28%);
+  }
+}
+
+@keyframes descer {
+  0% {
+    bottom: -10px;
+  }
+  100% {
+    bottom: -90px;
+  }
+}
+
+@keyframes expandir {
+  0% {
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(2);
+  }
+}
+
+@keyframes sumir {
+  0% {
+  opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+  opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes andar {
+  0% {
+    left: 0px;
+  }
+  100%{
+    left: 1000px;
+  }
+}
+
+.cenario{
+  position: fixed;
+  margin: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 1000px;
+  height: 1000px;
+  overflow: hidden;
+}
+
+body.cena1 .cenario{
+  background-color: lightblue;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+body.cena2 .cenario{
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: ceu 5s infinite alternate;
+}
+
+body.cena3 .cenario{
+  background-color: lightblue;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+body.cena1 .balao div{
+  top: 300%;
+  left: 300%;
+}
+
+body.cena3 .balao div{
+  top: 300%;
+  left: 300%;
+}
+
+body.cena2 .texto1{
+  top: 300%;
+  left: 300%;
+}
+
+body.cena3 .texto1{
+  top: 300%;
+  left: 300%;
+}
+
+body.cena1 .texto2{
+  top: 300%;
+  left: 300%;
+}
+
+body.cena3 .texto2{
+  top: 300%;
+  left: 300%;
+}
+
+body.cena1 .texto3{
+  top: 300%;
+  left: 300%;
+}
+
+body.cena2 .texto3{
+  top: 300%;
+  left: 300%;
+}
+
+body.cena2 .balao1{
+ animation: aparecer 0.5s forwards;
+ animation-delay: 1.3s;
+}
+
+body.cena2 .balao2{
+ animation: aparecer 0.5s forwards;
+ animation-delay: 3.5s;
+}
+
+body.cena2 .balao3{
+ animation: aparecer 0.5s forwards;
+ animation-delay: 5s;
+}
+
+body.cena1 .humanos div{
+  bottom: -1000px;
+  left: -1000px;
+}
+body.cena1 .montedir{
+  bottom: 200%;
+  left: 200%;
+}
+
+body.cena2 .montedir{
+  bottom: 200%;
+  left: 200%;
+}
+
+body.cena1 .monteesq{
+  bottom: 200%;
+  left: 200%;
+}
+
+body.cena2 .monteesq{
+  bottom: 200%;
+  left: 200%;
+}
+
+body.cena2 .humano1{
+  animation: subir 1s linear;
+}
+
+body.cena2 .humano2{
+  animation: subir 5s linear;
+}
+
+body.cena2 .humano3{
+  animation: subir 4s linear;
+}
+
+body.cena2 .humano4{
+  animation: subir 7s linear;
+}
+
+body.cena2 .humano5{
+  animation: subir 3s linear;
+}
+
+body.cena3 .humano1{
+  animation: descer 1s forwards;
+}
+
+body.cena3 .humano2{
+  animation: descer 0.8s forwards;
+}
+
+body.cena3 .humano3{
+  animation: descer 2s forwards;
+}
+
+body.cena3 .humano4{
+  animation: descer 3s forwards;
+}
+
+body.cena3 .humano5{
+  animation: descer 1s forwards;
+}
+
+
+body.cena3 .montanha{
+  bottom: 300%;
+  left: 300%;
+}
+
+body.cena3 .monteesq{
+  animation: esquerda 5s forwards;
+}
+
+body.cena3 .montedir{
+  animation: direita 5s forwards;
+}
+
+body.cena2 .ratinho{
+  bottom: -200%;
+  right: -200%;
+}
+
+body.cena1 .ratinho{
+  bottom: -200%;
+  right: -200%;
+}
+
+body.cena3 .ratinho{
+  animation: andar 8s forwards;
+  animation-delay: 4s;
+}
+
+body.cena1 .fumaca{
+  bottom: 300%;
+  right: 300%;
+}
+
+body.cena2 .fumaca{
+  bottom: 300%;
+  right: 300%;
+}
+
+body.cena3 .fumaca{
+  animation:
+  aparecer 1s 2s forwards,
+  expandir 2s forwards ,
+  sumir 3s linear 2s forwards;
+}
+
+
+
+.texto1{
+  background: url("texto1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1000px;
+  height: 200px;
+  position: absolute;
+  top: 0px;
+}
+
+.texto2{
+  background: url("texto2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1000px;
+  height: 200px;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+
+.texto3{
+  background: url("texto3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1000px;
+  height: 200px;
+  position: absolute;
+  top: 0px;
+  z-index: -2;
+}
+
+.fumaca{
+  background: url("fumaca.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0px;
+  left: 350px;
+  width: 400px;
+  height: 400px;
+  opacity: 100%;
+ z-index: 30;
+}
+
+.montanha{
+  background: url("montanhas.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 0px;
+  margin: auto;
+  bottom: -290px;
+  left: 0px;
+  right: 0px;
+  width: 700px;
+  height: 900px;
+  position: absolute;
+  animation: tremer .8s infinite;
+  z-index: -20;
+}
+
+.cenario .montanhas {
+    position: absolute;
+    bottom: 0px;
+    width: 1000px;
+    height: 1000px;
+}
+
+.montanhadir {
+  background: url("montanha_dir.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -300px;
+  width: 300px;
+  height: 600px;
+  position: absolute;
+ }
+
+.grama{
+  background: url("grama.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1000px;
+  height: 300px;
+  position: absolute;
+  bottom: -70px;
+  z-index: 9;
+}
+
+.monteesq {
+  background: url("montanha_parteesq1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 900px;
+  width: 400px;
+  bottom: -310px;
+  left: 170px;
+}
+
+.ratinho{
+  background: url("ratinho.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 143px;
+  width: 100px;
+  margin: auto;
+  left: 0px;
+  bottom: 20px;
+  right: 0px;
+  z-index: -2;
+}
+
+.montanhaesq {
+  background: url("montanha_esq.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -200px;
+  right: 0px;
+  width: 400px;
+  height: 500px;
+  position: absolute;
+ z-index: -4;
+ }
+
+ .montedir {
+   background: url("montanha_partedir1.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   position: absolute;
+   height: 900px;
+   width: 350px;
+   bottom: -300px;
+   right: 135px;
+   z-index: -5;
+ }
+
+.cenario .nuvem1{
+  background: url("nuvem1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 150px;
+  position: absolute;
+  top: 200px;
+  animation: nuvensdir;
+  animation-timing-function: linear;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+}
+
+.nuvem2{
+  background: url("nuvem2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 600px;
+  left: 300px;
+  animation: nuvensesq 20s;
+  animation-timing-function: linear;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  z-index: -20;
+
+}
+
+.nuvem3{
+  background: url("nuvem3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 220px;
+  height: 130px;
+  position: absolute;
+  top: 350px;
+  animation: nuvensdir;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;
+}
+
+.cenario .nuvem4{
+  background: url("nuvem4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 80px;
+  position: absolute;
+  top: 300px;
+  left: 40px;
+  animation: nuvensesq 40s;
+  animation-timing-function: linear;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+}
+
+.nuvem5{
+  background: url("nuvem5.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  animation: nuvensesq 40s;
+  animation-timing-function: linear;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+}
+
+.humano1{
+  background: url("humano1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 200px;
+  bottom: -10px;
+  position: absolute;
+  z-index: 10;
+}
+
+.humano2{
+  background: url("humano2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -5px;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  right: 80px;
+  transition: 1s;
+    z-index: 10;
+}
+
+.humano3{
+  background: url("humano3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -15px;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  right: -150px;
+  transition: 1s;
+  z-index: 10;
+}
+
+.humano4{
+  background: url("humano4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -10px;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: 300px;
+  transition: 1s;
+    z-index: 10;
+}
+
+.humano5{
+  background: url("humano5.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -10px;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: 200px;
+  transition: 1s;
+  z-index: 10;
+}
+
+.balao1{
+  background: url("balao1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 150px;
+  opacity: 0;
+}
+
+.balao2{
+  background: url("balao2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 150px;
+  left: 200px;
+  opacity: 0;
+}
+
+.balao3{
+  background: url("balao3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 150px;
+  right: 160px;
+  opacity: 0;
+}
